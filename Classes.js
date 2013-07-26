@@ -1,4 +1,4 @@
-var ClassLib = (function () {
+var Classes = (function () {
     var BaseClass = function() {
     };
 
