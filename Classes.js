@@ -1,8 +1,10 @@
 var Classes = (function () {
-    var BaseClass = function() {
+    exports = {};
+
+    exports.BaseClass = function() {
     };
 
-    BaseClass.extend = function(props) {
+    exports.BaseClass.extend = function(props) {
         var newClass = function() {
             if (this.init) {
                 this.init.apply(this, arguments);
@@ -22,7 +24,5 @@ var Classes = (function () {
         return newClass;
     };
 
-    return {
-        "BaseClass": BaseClass
-    };
+    return exports;
 })();
